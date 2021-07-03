@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+	margin: 0%
+	padding:  0%;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+	--height: 70px;
+	--height2: 55px;
+	--profilewidth2:  30%;
+	--profileimage:  40px;
+}
+
+/*Collapsed Navabar*/
+
+.collapsenav{
+	position: fixed;
+	height: 100%;
+	width: 0px;
+	right: 0;
+	bottom: 0;
+	background-color: white;
+	padding: 0px;
+	margin: 0px;
+	overflow-x: hidden;
+	transition: 0.5s;
+	z-index: 2;
+}
+
+.logoc{
+    width: 100%;
+    height: 70px;
+    padding: 0px 5px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+	width: 70%;
+}
+.close{
+	width: 20%;
+	font-size: 35px;
+	color: block;
+	margin-right: 5px;
+}
+
+.close #closenav{
+	float: right;
+	cursor: pointer;
+}
+
+.collog{
+	width: 100%;
+	height: 40px;
+	background-color: #9ac5d6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.collog p{
+	margin: 0px;
+	font-size: 14px;
+}
+
+.client{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.clients{
+	width: 80%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.clients p{
+	margin: 0px;
+	font-size: 18px;
+}
+
+.clients p::before{
+    content = " < ";
+}
+
+.search{
+	width: 20%;
+	height: 50px;
+	display: grid;
+	place-items:  center;
+	background-color: #d9d7d7;
+}
+
+.verticals{
+	width: 100%;
+	height: 77.5vh;
+	position: relative;
+}
+
+.vernav{
+	width: 100%;
+	height: 60px;
+	color: white;
+	display: flex;
+	align-items: center;
+	background-color: #0d6efd;
+	border-bottom: 1px solid white;
+	padding: 0px 10px;
+	position: relative;
+}
+
+
+.vernav:first-child{
+	background-color: darkblue;
+}
+
+.vernav:last-child{
+    background-color: rgba(13, 110, 253 , 0.6)!important;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    display: grid;
+    place-items:  center;
+    border-top: 1px solid white;
+}
+
+.vernav:hover{
+	background-color: lightblue;
+}
+
+
+.vernav p{
+	margin: 0px;
+}
+
+
+
+#verico{
+    font-size: 24px;
+    margin: 12px;
+}
+
+#verico1{
+	position: absolute;
+	font-size: 28px;
+    right: 0px;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+}
+
+/*Collapsed Navbar ends*/
+
+
+#Background{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: 1 ;
+	top: 0;
+	left: 0;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.backg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+	padding: 0px;
+}
+.nav1{
+	width: 85%;
+	height: var(--height);
+	/*background-color: lightblue;*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.nav1 img{
+	width: 200px;
+	height: 50px;
+}
+
+.navicon{
+	/*display: ;*/
+	height: auto;
+	width: 30%;
+
+}
+
+.navicon ul{
+	margin-bottom: 0px;
+	padding-left: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navicon ul li{
+	list-style: none;
+	width: auto;
+	padding: 0px 5px;
+	font-size: 15px;
+	color:  blue;
+	display: inline;
+	justify-content: center;
+	align-items: center;
+}
+
+.navicon ul li i{
+	font-size: 27px;
+	margin-top: 9px;
+	padding-right: 0px;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px){
+   .navicon{
+   	width: 40%;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+
+	.nav1{
+		width: 95%;
+	}
+
+	.navicon{
+		width: 10%;
+	}
+
+    .navicon ul li{
+		display: none;
+	}
+
+
+    .navicon ul li:last-child {
+        display: block;
+    }
+
+    .navicon ul li i{
+    	font-size: 25px;
+     }
+}
+
+
+
+
+/*
+Navigation Bar 2*/
+
+.backg1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	background-color: #d9d7d7;
+}
+
+.nav2{
+	width: 85%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.profile{
+	
+	width: 200px;
+	display: flex;
+	height: auto;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav2 .image2{
+	width: var(--profilewidth2);
+	height: var(--height2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav2 .text2{
+	width:  calc(100% - var(--profilewidth2) );
+	height: var(--height2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 15px;
+}
+
+.nav2 .profile .image2 img{
+	width: var(--profileimage);
+	height: var(--profileimage);
+}
+
+.nav2 .text2 ul{
+	padding: 0px 0px;
+}
+
+.nav2 .text2 ul li{
+	list-style: none;
+	display: block;
+	float: left;
+}
+
+.proftext p{
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+	.nav2{
+		width: 95%;
+	}
+}
+
+
+
+
+/*
+Navigation Bar 3*/
+
+
+
+
+.backg3{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	padding: 0px;
+}
+.nav3{
+	width: 85%;
+	display: flex;
+	align-items: center;
+	overflow: auto;
+    white-space: nowrap;
+}
+
+.nav3 ul{
+	width: 100%;
+	padding: 0px;
+	margin-bottom: 0px;
+	overflow: auto;
+    white-space: nowrap;
+}
+
+.nav3 ul li{
+	list-style: none;
+	padding: 0px 8px;
+	font-size: 15px;
+	display: inline-block;
+	font-weight: bold;
+	float: left;
+	color: blue;
+}
+/*.nav3 ul li:first-child{
+	padding-left: 0px;
+}*/
+
+@media only screen and (max-width: 768px) {
+	.nav3{
+		width: 97%;
+	}
+}
+
+/*Main content*/
+
+.main{
+	width: 100%;
+    background-color: #d9d7d7;
+    height: auto;
+    padding: 10px 0px;
+}
+
+
+.main1{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	padding: 4px 5px;
+
+}
+
+.main11{
+	width: 30%;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	padding: 2px;
+}
+
+.main11 form{
+	float: left;
+	font-size: 13px;
+}
+
+.main12{
+	width: 20%;
+	background-color: white;
+}
+
+.main12 form select{
+   width: 100%;
+}
+
+
+.main2{
+	width: 100%;
+	height: 450px;
+	background-color: white;
+}
+
+@media only screen and (max-width: 1024px){
+   .main11{
+     width: 50%;
+   }
+   .main1{
+   	width: 96%;
+   }
+}
+
+@media only screen and (max-width: 768px){
+   .main11{
+     width: 70%;
+     font-size: 15px;
+   }
+   .main2{
+   	width: 96%;
+   }
+}
+
+
