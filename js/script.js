@@ -51,7 +51,9 @@ close.addEventListener("click",closed = () =>{
 
 var chart = new CanvasJS.Chart("chartContainer", {
 
-
+    title:{
+          text: "ASSET ALLOCATION : 1,210,000"
+          },
   
 	data: [{
 		type: "doughnut",
@@ -61,25 +63,25 @@ var chart = new CanvasJS.Chart("chartContainer", {
 		indexLabel: "{label} - #percent%",
 		toolTipContent: "<b>{label}:</b> {y} (#percent%)", */
 		dataPoints: [
-			{ y: 3, label: "",color: "#595959" },
+			{ y: 3, label: "Fixed Income",color: "#595959" },
       { y: .1,color: "white" },
-			{ y: 5, label: "",color:"#8c8c8c"},
+			{ y: 5, label: "Equities",color:"#8c8c8c"},
        { y: .1, color: "white" },
-			{ y: 22, label: "",color: "grey" },
+			{ y: 22, label: "Cash",color: "grey" },
        { y: .1,color: "white" },
-			{ y: 3, label: "",color: "#B0B0B0"},
+			{ y: 3, label: "Fixed Income",color: "#B0B0B0"},
        { y: .1, color: "white" },
-			{ y: 6, label: "",color: "#660000"},
+			{ y: 6, label: "Equities",color: "#660000"},
        { y: .1,color: "white" },
-			{ y: 13, label: "",color:"#b38600"},
+			{ y: 13, label: "Cash",color:"#b38600"},
        { y: .1,color: "white" },
-      { y: 22, label: "",color: "#1a0000" },
+      { y: 22, label: "Fixed Income",color: "#1a0000" },
        { y: .1,color: "white" },
-			{ y: 3, label: "",color:"blue" },
+			{ y: 3, label: "Equities",color:"blue" },
        { y: .1,color: "white" },
-			{ y: 5, label: "",color:"lightblue" },
+			{ y: 5, label: "Cash",color:"lightblue" },
        { y: .1, color: "white" },
-			{ y: 20, label: "",color:"#99e6ff"},
+			{ y: 20, label: "Cash",color:"#99e6ff"},
        { y: .1,color: "white" },
 			
       
