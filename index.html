@@ -15,13 +15,11 @@
 	<!-- External links  -->
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.0/chart.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.0/dist/chart.min.js"></script>
 
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 	<!-- External links
  -->
     <title>Assignment 1</title>
@@ -82,16 +80,16 @@
             </div>
 
          </div>
-
       </div>
 
-
-
     <!-- Collapsed Navbar  -->
+
     <div id="Background">
     </div>
 
-  	<div class="container-fluid px-0" >
+
+
+  	<div class=" mainbackg px-0" id="Mainback" >
       
       <!-- Collapsed Navbar -->
       <div class="container-fluid backg p-0">
@@ -154,24 +152,20 @@
      	<div class="nav3">
 
      		<ul>
-              <li>Summary</li>
-              <li>Accounts</li>
-              <li>Portfolio</li>
-              <li>Terms Deposit</li>
-              <li>Credit Summary</li>
+              <li id="n31">Summary</li>
+              <li id="n32">Accounts</li>
+              <li id="n33">Portfolio</li>
+              <li id="n34">Terms Deposit</li>
+              <li id="n35">Credit Summary</li>
      		</ul>
-
-     	</div>
-     
-     </div> 
-
+     	</div>     
+     </div>
 
      <!-- navbar 3 -->
 
     <!--  Main Content -->
 
     <div class="main">
-
           <div class="container main1">
                 
               <div class="main11">
@@ -192,26 +186,26 @@
                     </select>
               	</form>
               </div>
-
           </div>
-
     </div>
 
     <div class="main">
-
-          <div class="container main2">
-                
+          <div class="container main2">                
               <div>
                 <!--  <canvas id="myChart" width="100" height="100"></canvas> -->
+                <div id="chartContainer" style="height: 370px; width: 100%;"></div>
                </div>
-
 
           </div>
 
     </div>
 
+    </div>
+
+    
 
   	</div>
+
 
   	
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
